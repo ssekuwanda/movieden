@@ -70,3 +70,6 @@ server {
 
 # force github
 git reset --hard
+
+# FFMPEG
+sudo apt install ffmpeg
