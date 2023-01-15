@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Movie, Downloaded, QrCodePayment
+from .models import Movie, Downloaded, QrCodePayment, Genre
 from .models import SaleSummary
 from django.contrib.admin.options import ModelAdmin
 from django.db.models import Count, Sum
@@ -37,5 +37,6 @@ class SaleSummaryAdmin(ModelAdmin):
         return response
 
 admin.site.register(Movie)
+admin.site.register(Genre)
 admin.site.register(Downloaded)
 admin.site.register(QrCodePayment)
