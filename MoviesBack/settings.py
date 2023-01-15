@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-2=1u4%(qz#n_mxe6esqdt57fa^m3)nu5^!-@#pj0n+z&3=yyrc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ONLINE = True
+ONLINE = False
 
 if ONLINE:
     ALLOWED_HOSTS = ['*']
@@ -53,6 +53,9 @@ MIDDLEWARE = [
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 524288000 # 5 MB
+
 ROOT_URLCONF = 'MoviesBack.urls'
 
 # Swagger settings
