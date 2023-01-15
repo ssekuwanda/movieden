@@ -28,3 +28,4 @@ urllib3==1.26.8
 django-crispy-forms
 django-qr-code
 psycopg2-binary
+whitenoise
