@@ -66,3 +66,7 @@ sudo tail -F /var/log/nginx/error.log
 server {
     client_max_body_size 10000000M;
 }
+
+
+# force github
+git reset --hard
