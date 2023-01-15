@@ -44,7 +44,7 @@ server {
     location = /favicon.ico { access_log off; log_not_found off; }
 
     location /static/ {
-        root /home/doug/moviestore/movieden/movies/static;
+        alias /home/doug/moviestore/movieden/movies/staticfiles;
     }
 
     location / {
