@@ -16,7 +16,7 @@ DEBUG = True
 ONLINE = True
 
 if ONLINE:
-    ALLOWED_HOSTS = ['192.168.0.2']
+    ALLOWED_HOSTS = ['*']
 else:
     ALLOWED_HOSTS = ['*']
 
